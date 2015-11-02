@@ -1,0 +1,23 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'maps/bootstrap-3.3.5/css/bootstrap.min.css' %}"/>
+    {% block css %}{% endblock %}
+    {% block head_js %}{% endblock %}
+</head>
+<body>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+
+    <script src="{% static 'maps/jquery/jquery-2.1.4.min.js' %}"></script>
+    <script src="{% static 'maps/jquery/jquery.cookie.js' %}"></script>
+    <script src="{% static 'maps/bootstrap-3.3.5/js/bootstrap.min.js' %}"></script>
+    {% block js %}{% endblock %}
+</body>
+</html>
