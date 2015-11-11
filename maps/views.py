@@ -4,6 +4,7 @@ from django.template import RequestContext
 from maps.models import Map
 # from dejkstra.graph import Graph
 # import json
+# from mock import Mock, patch
 
 
 def index_view(request):

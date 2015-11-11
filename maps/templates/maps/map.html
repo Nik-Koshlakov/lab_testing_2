@@ -9,6 +9,11 @@
 {% block content %}
     <h4>Map: {{ map.name }}</h4>
     <canvas id="map-cnv"></canvas>
+
+{#    <form action="">#}
+{#        {% csrf_token %}#}
+{#    </form>#}
+
     <a href="{% url 'maps:index' %}">Назад</a>
 {% endblock %}
 
