@@ -11,3 +11,7 @@
     <canvas id="map-cnv"></canvas>
     <a href="{% url 'maps:index' %}">Назад</a>
 {% endblock %}
+
+{% block js %}
+    <script src="{% static 'maps/js/map.js' %}"></script>
+{% endblock %}

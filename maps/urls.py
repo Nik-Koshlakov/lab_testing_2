@@ -8,4 +8,5 @@ urlpatterns = patterns(
     '',
     url(r'^$', index_view, name='index'),
     url(r'^map-control/(?P<map_id>\d+)/$', control_view, name='control'),
+    # url(r'^ret-json$', ret_json, name='index'),
 )
