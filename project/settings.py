@@ -68,8 +68,14 @@ DATABASES = {
         'PASSWORD': '11',
         'HOST': '127.0.0.1',
         'PORT': 3306,
-        'OPTIONS': {'charset': 'utf8', },
-        'TEST_CHARSET': 'utf8',
+    },
+    'test': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'test_maps_db',
+        'USER': 'maps_user',
+        'PASSWORD': '11',
+        'HOST': '127.0.0.1',
+        'PORT': 3306,
     }
 }
 

@@ -1,4 +1,4 @@
-from dejkstra import Graph, Node
+from graph import Graph, Node
 import unittest
 
 __author__ = 'nikita'

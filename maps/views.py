@@ -2,7 +2,8 @@ from django.http import HttpResponseNotAllowed, HttpResponseBadRequest, HttpResp
 from django.shortcuts import render, get_object_or_404
 from django.template import RequestContext
 from maps.models import Map
-import json
+# from dejkstra.graph import Graph
+# import json
 
 
 def index_view(request):
